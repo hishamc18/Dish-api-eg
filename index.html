@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .h1::first-letter{
+        color: red;
+    }
+
+    #dish{
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+    }
+
+    img{
+        margin-left: 60px;
+        transform: scale(60%);
+    }
+
+    #dish li{
+        height: 250px;
+        width: 250px;
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h1{
+        color: white;
+    }
+</style>
+<body>
+    <h1 style="text-align: center; color: white; font-size: 5em;" class="h1">DISHES</h1>
+    <div class="main">
+        <ul id="dish"></ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src = "app.js"></script>
+</body>
+</html>

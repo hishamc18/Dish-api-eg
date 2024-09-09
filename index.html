@@ -7,7 +7,7 @@
 </head>
 <style>
     body{
-        background-color: black;
+        background-color: rgb(0, 0, 0);
     }
     .h1::first-letter{
         color: red;
@@ -23,8 +23,8 @@
     }
 
     img{
-        margin-left: 60px;
-        transform: scale(60%);
+        transform: scale(50%);
+        margin-bottom: -30px;
     }
 
     #dish li{
@@ -32,6 +32,7 @@
         width: 250px;
         border: 2px solid white;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
@@ -39,9 +40,14 @@
     .h1{
         color: white;
     }
+    h3{
+        color: rgb(255, 255, 255);
+
+
+    }
 </style>
 <body>
-    <h1 style="text-align: center; color: white; font-size: 5em;" class="h1">DISHES</h1>
+    <h1 style="text-align: center; color: white; font-size: 3em;" class="h1">DISHES</h1>
     <div class="main">
         <ul id="dish"></ul>
     </div>
